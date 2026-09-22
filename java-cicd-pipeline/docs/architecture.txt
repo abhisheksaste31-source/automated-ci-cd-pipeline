@@ -1,0 +1,19 @@
+CI/CD Flow
+
+GitHub
+  |
+  v
+Jenkins
+  |
+  +--> Maven Clean Package
+  |
+  +--> SonarQube Analysis
+  |
+  +--> Nexus Repository
+  |
+  +--> AWS S3
+  |
+  +--> Apache Tomcat
+  |
+  v
+Deployed Java WAR Application
